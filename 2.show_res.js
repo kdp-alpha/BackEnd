@@ -3,7 +3,9 @@ const http = require("http");
 //show res from server to browser
 const server = http.createServer((req,res)=>{
    res.setHeader('Content-type','text/plain');
+   res.setHeader('Content-type','text/html');
    res.write('Hello Coders');
+   res.write('<h1>Hello Coders</h1>');
    res.end();
 })
 
